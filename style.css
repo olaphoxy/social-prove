@@ -66,8 +66,6 @@ p{
     background-position:  right -30px bottom -100px;
     overflow: hidden;
     line-height: 1.5;
-    /* width: 100vw;
-    height: 100vh; */
     
   }
   .cover{
@@ -109,7 +107,7 @@ p{
      margin-bottom: 5px;
  }
  .intro p{
-     padding-right: 120px;
+     width: 400px;
  }
  .star{
      margin-right: 12px;
@@ -122,6 +120,7 @@ p{
  .testimonials{
      display: flex;
      flex-direction: row;
+     margin-top: 20px;
  }
 
  .testimonials .card{
@@ -130,8 +129,8 @@ p{
     margin-right: 20px;
     border-radius: 10px;
     padding: 20px 22px  ;
-    height: 220px;
-    width: 320px;
+    height: 30%;
+    width: 30%;
  }
  .testimonials .card p{
     color: var(--white);
@@ -158,6 +157,65 @@ p{
  }
  .card-3{
      margin-top: 60px;
+    
  }
 
+ @media (max-width: 375px) {
+    body{
+        overflow:scroll;
+        background: url('./images/bg-pattern-bottom-mobile.svg') no-repeat;
+        background-position:  right -30px bottom -100px;
+    }
+    .cover{
+        height: 170vh;
+        background: url('./images/bg-pattern-top-mobile.svg')no-repeat;
+        
+    }
+
+     .container{
+         width: 90%;
+         padding: 0;
+         
+     }
+    
+     .intro{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .intro p{
+        width: 100%;
+    }
+     .upper{
+         flex-direction: column;
+        margin: auto;
+     }
+     .testimonials .card{
+         margin-right: 0;
+         width: auto;
+     }
+     .rate-1{
+         flex-direction: column;
+         text-align: center;
+         width: auto;
+        
+     }
+     .move-2{
+         margin-left: 0;
+     }
+     .move-3{
+         margin-left: 0;
+     }
+
+     .testimonials{
+         flex-direction: column;
+     }
+     .card-2{
+         margin-top: 10px;
+     }
+     .card-3{
+         margin-top: 10px;
+     }
+   
+ }
 
