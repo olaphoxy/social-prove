@@ -22,6 +22,8 @@
 }
 h1{
     color: var(--dark-magenta);
+    font-size: 2rem;
+    line-height: 1.2;
   
     
 }
@@ -131,6 +133,9 @@ p{
     padding: 20px 22px  ;
     height: 30%;
     width: 30%;
+ }
+ .testimonials .card h2{
+     font-size: 14px;
  }
  .testimonials .card p{
     color: var(--white);
